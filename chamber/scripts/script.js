@@ -7,6 +7,10 @@ const hambutton = document.querySelector('#menu');
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
 // What does toggle mean? Instead of add and remove, toggle means add the class name (the parameter, which in this case is named 'responsive') if it does not currently exist, and remove the 
+
+
+
+
 // select the elements to manipulate (output to)
 const datefield = document.querySelector(".date");
 const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
