@@ -5,7 +5,7 @@ body {
 
 .container{
 	max-width: 960px;
-	margin: 100px auto;
+	margin: 10px auto;
 	padding: 10px;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -20,7 +20,12 @@ body {
 	border: tan 2px solid;
 	max-height: 400px;
 }
+.footercontainer{
+	max-width: 960px;
+	display: grid;
+	grid-template-rows: 80px 30px 20px 20px 20px 20px;
 
+}
 .logo{
 	height: 100px;
 	width: 130px;
@@ -30,19 +35,21 @@ body {
 .footerlogo{
 	height: 100px;
 	width: 130px;
+	align-self: center;
 }
 
-
-.date,
-aside {
-	margin: 0.5rem;
-	border: 1px solid #bbb;
-	padding: 0.75rem;
+.date {
+	margin: 10px;
+	border: 1px solid tan;
+	padding: 10px;
 	background-color: #eee;
+	float: left;
 }
 
 h1{
 	margin: 15px;
+	text-align: center;
+	align-self: center;
 }
 footer{
 	text-align: center;
@@ -53,18 +60,35 @@ footer{
 		display: flex;
 		background-color: lavender;
 		padding: 20px;
+		width: auto;
+
 
 	  }
 	  
-	  .flex-container > div img h1 h3 {
-		background-color: #f1f1f1;
-		margin: 10px;
-		padding: 20px;
-		font-size: 30px;
-		flex: 1;
-	  }
-	
 
+	  * {
+		box-sizing: border-box;
+	}
+	
+	
+	main {
+		margin: 0;
+		border: 1px solid #bbb;
+		padding: 0.5rem;
+		width: auto;
+		background-color: lavender;
+		float: right;
+	}
+	
+	#lastModified {
+		text-align: center;
+		font-size: smaller;
+	}
+	
+.footerp{
+	max-height: 20px;
+	
+}
 
 /* Mobile View ***************/
 nav {
@@ -113,6 +137,10 @@ nav {
 	content: "X";
 }
 
+.footerlogo:nth-child(1){
+	align-self: center;
+	justify-self: center;
+	}
 
 
 /* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
