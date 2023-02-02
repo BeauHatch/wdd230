@@ -18,6 +18,7 @@ body {
 	padding: 20px;
 	border: tan 2px solid;
 	max-height: 400px;
+	width: 100%;
 }
 
 .logo{
