@@ -12,17 +12,18 @@ body {
 }
 
 .overlaytext{
-	font-size: small;
 	left: 0;
-	top: 10px;
+	top: 0px;
 	width: 100%;
-	padding: 1rem;
+	padding: 2rem;
 	position: absolute;
 	text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 
 }
 
 .overlaytext2{
+	font-size: small;
+
 	left: 0;
 	top: 80px;
 	width: 100%;
@@ -33,6 +34,8 @@ body {
 }
 
 .overlaytext3{
+	font-size: small;
+
 	left: 0;
 	top: 110px;
 	width: 100%;
@@ -43,6 +46,8 @@ body {
 }
 
 .overlaytext4{
+	font-size: small;
+
 	left: 0;
 	top: 140px;
 	width: 100%;
