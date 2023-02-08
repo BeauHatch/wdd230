@@ -35,12 +35,21 @@
     </nav>
     <div class="container">
      
-        <a class="item" href="">
+        <picture class="item">
+            <source media= "(max-width: 550px)" class="itemimage" srcset="images/heromedium.png" >
+            <source media= "(max-width: 768px)" class="itemimage" srcset="images/herolarge.png">
+            <img class="itemimage"  src="images/herosmall.png" alt="herosmall">
+            <div class="overlaytext">
+                <h3>Herriman City Park </h3> 
+            </div>
+        </picture>
+
+        <!-- <a class="item" href="">
             <img class="itemimage"  src="images/herrimansky.jpg" alt="Herriman arial">
             <div class="overlaytext">
                 <h3>Herriman City Park </h3> 
             </div>
-        </a>
+        </a> -->
       
         <a class="item" href="">
             <img class="itemimage" src="images/hearts.jpg" alt="hearts">
@@ -51,10 +60,20 @@
     
         <a class="item" href="">
             <img class="itemimage" src="images//weather.jpg" alt="weather">       
-            <div class="overlaytext">
-                <h3>Weather</h3> 
-            </div>
+            <!-- <div class="overlaytext">
+                <h3>Today's Weather</h3> 
+            </div> -->
+            <div class="overlaytext">Today's Weather</div>
+            <div class="overlaytext2">High: 57&deg; </div>
+            <div class="overlaytext3">Low: 37&deg; </div>
+            <div class="overlaytext4">Wind Chill: <span id="windChill"></span>&deg; </div>
         </a>
+                <!-- <ul> 
+                   <li class="overlaytext2">High: 57&deg;</li>
+                   <li class="overlaytext3">Low: 37&deg;</li>
+                   <li class="overlaytext4">Wind Chill: <span id="windChill"></span>&deg;</li>  
+                </ul>  -->
+            
     
         <a class="item" href="">
             <img class="itemimage" src="images/news.jpg" alt= "4 news"> 
@@ -102,7 +121,7 @@
                 <div id="lastModified"></div>
 
             </div>
-
+<input type= "color" name="" id="">
         </div>
         <!-- <img class="footerlogo" src="images/craplogo copy.png" alt="logo">
         <p class="footerp" >wdd230</p>
