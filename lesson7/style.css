@@ -1,0 +1,8 @@
+.blur {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 2s;
+  }

@@ -40,9 +40,6 @@ if (day===1||day===2){
 
 }
 
-   //f = 35.74 + 0.6215 t - 35.75 s0.16 + 0.4275 t s0.16
-        //where f is the wind chill factor in Fahrenheit, t is the air temperature in Fahrenheit,
-        //and s is the wind speed in miles per hour at five feet above the ground.
 		var temp= 57;
 		var wSpeed= 15;
 		var windChill= (35.74 + (0.6215 * temp))-(35.75 * Math.pow(wSpeed,0.16)) + (0.4275*temp*Math.pow(wSpeed,0.16));
