@@ -32,7 +32,7 @@ document.querySelector(
 
 
 
-
+// banner
 const d = new Date();
 let day = d.getDay() 
 if (day===1||day===2){
@@ -47,3 +47,75 @@ if (day===1||day===2){
 		var windChill= Math.round(windChill);
 		document.getElementById("windChill").innerHTML= windChill;
         
+// IntersectionObserver
+		let imagesToLoad = document.querySelectorAll("img");
+
+		function loadImages(img){
+		  const src = img.getAttribute("data-src");
+		  if(!src){
+			  return;
+		  }
+		  img.src = src
+		  img.classList.remove("blur")
+		}
+	  
+		let imgOptions = {
+			   threshold: 1,
+			   rootMargin: " 0px 0px 50px 0px"
+		}
+		const observer = new IntersectionObserver((items, observer)=>{
+	  
+		  items.forEach((item) => {
+		  if (!item.isIntersecting) {
+			  return;
+		  }else{
+				  loadImages(item.target);
+				  observer.unobserve(item.target);
+			  }
+		  })
+		},imgOptions);
+	  
+		imagesToLoad.forEach(loadImages=> {
+		  observer.observe(loadImages);
+		});
+	  
+
+		const thing = document.querySelector("#visit");
+
+		let today = new Date();
+		
+		let lastlogin = window.localStorage.getItem("local");
+		
+		localStorage.setItem("local", Date.now());
+		
+		let days = (lastlogin - Date.now()) / 84600000;
+		
+		thing.innerHTML = Math.ceil(days)*-1;
+		
+		 //new Date(today.getFullYear(), 1, 14);
+
+		// const thing = document.querySelector("#visit");
+
+		// let today = new Date();
+		
+		// let lastlogin = new Date(window.localStorage.getItem("local"));
+		
+		// localStorage.setItem("local", lastlogin);
+		
+		// let days = (lastlogin.getTime() - Date.now()) / 84600000;
+		
+		// thing.innerHTML = Math.ceil(days)*-1;
+		
+
+// const thing = document.querySelector("#visit");
+
+// let today = new Date();
+
+// let lastlogin = new Date(today.getFullYear(), 1, 14);
+
+// let days = (lastlogin.getTime() - Date.now()) / 84600000;
+// console.log(lastlogin)
+// console.log(Date.now())
+// console.log(days)
+
+// thing.innerHTML = Math.floor(days)*-1;
