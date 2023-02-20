@@ -66,6 +66,10 @@ picture.item{
 	display: none;
 }
 
+.montue{
+	text-align: center;
+}
+
 .item{
 	background: lavender;
 	color: black;
