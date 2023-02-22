@@ -20,6 +20,7 @@ caption {
   caption-side: bottom;
 	color: var(--back);
 	font-size: .85rem;
+    background-color: lavender;
 }
 
 tr:first-child th, .highlight {
