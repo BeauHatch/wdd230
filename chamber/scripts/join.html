@@ -27,71 +27,98 @@
         </ul>
     </nav>
 
-    <table>
-        <caption>Table 1: Account feature comparison</caption>
-        <thead>
-            <tr>
-                <th colspan="4" scope="colgroup">Acme Wild West Services</th>
-            </tr>
-            <tr>
-                <th scope="col"></th>
-                <th scope="col">Basic</th>
-                <th scope="col">Premium</th>
-                <th scope="col">Deluxe</th>
-    
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>feature 1</th>
-                <td><input type="text"><button>First Name</button>
-    </td>
-                <td><span>&#10003;</span>
-    </td>
-                <td><span>&#10003;</span>
-    </td>
-                
-            </tr>
-            <tr>
-                <th>Feature 2</th>
-                <td><input type="text"><button>Last Name</button></td>
-                <td>&#10003;</td>
-                <td>&#10003;</td>
-    
-            </tr>
-            <tr>
-                <th>Feature 3</th>
-                <td><input type="email"><button>Email</button></td>
-                <td>&#215;</td>
-                <td>&#10003;</td>
-            </tr>
-            
-                    </tr>
-    
-            <tr>
-                <th>Feature 3</th>
-                <td><input type="text"><button>Phone number</button></td>
-                <td>&#215;</td>
-                <td>&#10003;</td>
-            </tr>
-            
+    <form action="thankyou.html"> 
+        <table>
+            <thead>
                 <tr>
-                <th>Feature 3</th>
-                <td><input type="text"><button>Business Position</button></td>
-                <td>&#215;</td>
-                <td>&#10003;</td>
-            </tr>
+                    <th colspan="2" scope="colgroup">Join us</th>
+                </tr>
     
-        <tr>
-                <th>Feature 3</th>
-                <td><input type="text"><button>Business name</button></td>
-                <td>&#215;</td>
-                <td>&#10003;</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><label for="Email">Email:</label></th>
+                    <td><input type="email" id="Email" name="Email" placeholder="Johndoe@gmail.com" required>
+        </td>
+        
+                </tr>
+                <tr>
+                    <th><label for="lname">Last name</label></th>
+                    <td><input type="text" id="lname" name="lname" required></td>
+                </tr>
+                
+                <tr>
+                    <th><label for="fname">First name</label></th>
+                    <td><input type="text" id="fname" name="fname" required></td>
+                </tr>
+        
+                <tr>
+                    <th><label for="phone">Phone</label></th>
+                    <td><input type="tel" id="phone" name="phone" placeholder="(800-111-2222)" ></td>
+                </tr>
+
+                <tr>
+                    <th><label for="membership">Membership options:</label></th>
+                    <td><select id="membership" name="membership">
+                        <option value="NP">NP Membership -free</option>
+                        <option value="Bronze">Bronze membership -$</option>
+                        <option value="silver">Silver membership -$$</option>
+                        <option value="gold">Gold membership -$$$</option>
+                    </select></td>
+                </tr>
+                
+                <tr>
+                    <th><label for="position">Business position</label></th>
+                    <td><input type="text" id="position" name="position" pattern="/^.{6,}$//^[a-zA-Z]{7,30}$/"></td>
+                </tr>
+
+                <tr>
+                    <th><label for="bname">Business name</label></th>
+                    <td><input type="text" id="bname" name="bname"></td>
+                </tr>
+
+       <tr>
+        <th><label for="textbox">Write about your business</label></th>
+        <td><textarea name="" id="" cols="30" rows="10"></textarea></td>               
+        </tr>
+
+          
+
+
+            <tr>
+                <input type="hidden" id="date" name="date" value="CurrentTime">
+                <input type="hidden" id="time" name="time" value="CurrentDate">
             </tr>
-    
-        </tbody>
-    </table>
-</body>
+
+        
+            <tr>
+                    <th colspan="2" scope="colgroup"><input type="submit"></th>
+                </tr>
+                
+        
+            </tbody>
+        </table>
+        </form> 
+
+        <footer>
+            <div class="footercontainer">
+                <div>
+                    <h5>Herriman chamber of commerce</h5>
+                    <p >84096</p>
+                    <p > &copy; 2023 </p>
+                </div>
+                <div class="footerlogocontainer">
+                    <img class="footerlogo" src="images/craplogo copy.png" alt="logo">
+                </div>
+                <div>
+                    <p>Beau Hatch</p>
+                    <p>+(801-123-1234)</p>
+                    <div id="lastModified">
+                </div>
+                    
+        </footer> 
+        <script src ="navbar.js"></script>
+<script src="hiddenDateAndTime.js"></script></body>
 </html>
 
 
@@ -103,7 +130,7 @@
 <h1>The input placeholder attribute</h1>
 
 <form action="/action_page.php">
-  <label for="Email">Email:</label><br><br>
+  <label for="Email">Email:</label>
   <input type="email" id="phone" name="phone" placeholder="Johndoe@gmail.com" <br><br>
 
   <input type="submit">
