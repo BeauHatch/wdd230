@@ -23,9 +23,6 @@ async function getProphetData(url) {
       // Build the h2 content out to show the prophet's full name - finish the template string
       h2.textContent = `${prophet.name} ____________`;
       p.textContent = `${prophet.lastname} ____________`;
-      p.textContent = `${prophet.death} ____________`;
-      p.textContent = `${prophet.lenth} ____________`;
-      p.textContent = `${prophet.name} ____________`;
 
   
       // Build the image portrait by setting all the relevant attribute
@@ -38,9 +35,7 @@ async function getProphetData(url) {
       // Append the section(card) with the created elements
       card.appendChild(h2);
       card.appendChild(p);
-
       card.appendChild(portrait);
-  
       cards.appendChild(card);
     }) // end of forEach loop
   }// end of function expression
