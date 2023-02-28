@@ -24,9 +24,15 @@ async function getProphetData(url) {
       let card = document.createElement('section');
       let h2 = document.createElement('h2');
       let portrait = document.createElement('img');
-    
+      let p = document.createElement('p');
+
       // Build the h2 content out to show the prophet's full name - finish the template string
       h2.textContent = `${prophet.name} ____________`;
+      p.textContent = `${prophet.lastname} ____________`;
+      p.textContent = `${prophet.death} ____________`;
+      p.textContent = `${prophet.lenth} ____________`;
+      p.textContent = `${prophet.name} ____________`;
+
   
       // Build the image portrait by setting all the relevant attribute
       portrait.setAttribute('src', prophet.imageurl);
@@ -37,6 +43,8 @@ async function getProphetData(url) {
   
       // Append the section(card) with the created elements
       card.appendChild(h2);
+      card.appendChild(p);
+
       card.appendChild(portrait);
   
       cards.appendChild(card);
