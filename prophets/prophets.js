@@ -11,6 +11,8 @@ async function getProphetData(url) {
 
 
   const displayProphets = (prophets) => {
+    console.log(prophets)
+
     const cards = document.querySelector('div.cards'); // select the output container element
   
     prophets.forEach((prophet) => {
