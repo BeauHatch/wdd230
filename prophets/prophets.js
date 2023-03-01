@@ -7,7 +7,7 @@ async function getProphetData(url) {
     displayProphets(data.prophets);
   }
   
-  getProphetData();
+  getProphetData(url);
 
 
   const displayProphets = (prophets) => {
