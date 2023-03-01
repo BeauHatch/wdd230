@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+img{
+    padding-bottom: 50px;
+    border: 50px;
+    border-color: maroon;
+    border-radius: 60px;
+}
+
+.cards{
+    background-color: beige;
+    padding: 10px;
+    border: 20px;
+    max-width: 960px;
+    margin: auto;
+}
+
+h2{
+    color: maroon;
+}
+
+h1{
+    padding: 40px;
+}

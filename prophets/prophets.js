@@ -11,7 +11,6 @@ async function getProphetData(url) {
 
 
   const displayProphets = (prophets) => {
-    console.log(data.prophets)
 
     const cards = document.querySelector('div.cards'); // select the output container element
   
@@ -21,10 +20,16 @@ async function getProphetData(url) {
       let h2 = document.createElement('h2');
       let portrait = document.createElement('img');
       let p = document.createElement('p');
+      let birthplace = document.createElement('p');
+      let birthdate = document.createElement('p');
+      let death = document.createElement('p');
+
+
+
 
       // Build the h2 content out to show the prophet's full name - finish the template string
-      h2.textContent = `${prophet.name} ____________`;
-      p.textContent = `${prophet.lastname} ____________`;
+      h2.textContent = `${prophet.name} ${prophet.lastname} `;
+      p.textContent = `Birthplace: ${prophet.birthplace} Birthday: ${prophet.birthdate} Death date: ${prophet.death}`;
 
   
       // Build the image portrait by setting all the relevant attribute
@@ -37,6 +42,10 @@ async function getProphetData(url) {
       // Append the section(card) with the created elements
       card.appendChild(h2);
       card.appendChild(p);
+      card.appendChild(birthplace);
+      card.appendChild(birthdate);
+
+      card.appendChild(death);
       card.appendChild(portrait);
       cards.appendChild(card);
     }) // end of forEach loop
