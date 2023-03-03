@@ -27,7 +27,7 @@ async function getCompanyData(url) {
 
 
       // Build the h2 content out to show the company's full name - finish the template string
-      p.textContent = `logo: ${company.logo} Address: ${company.address} website: ${company.website}`;
+      p.textContent = `logo: ${company.logo} Address: ${company.address} website: ${company.website} phone: ${company.phone}`;
 
   
       // Build the image portrait by setting all the relevant attribute
