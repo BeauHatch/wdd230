@@ -1,4 +1,4 @@
-const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-companys.json';
+const url = 'https://beauhatch.github.io/wdd230/chamber/scripts/directory.json';
 
 async function getCompanyData(url) {
     const response = await fetch(url);
@@ -17,19 +17,17 @@ async function getCompanyData(url) {
     companies.forEach((company) => {
       // Create elements to add to the div.cards element
       let card = document.createElement('section');
-      let h2 = document.createElement('h2');
       let portrait = document.createElement('img');
       let p = document.createElement('p');
       let logo = document.createElement('p');
       let address = document.createElement('p');
-      let death = document.createElement('p');
+      let website = document.createElement('p');
 
 
 
 
       // Build the h2 content out to show the company's full name - finish the template string
-      h2.textContent = `${company.name} ${company.lastname} `;
-      p.textContent = `logo: ${company.logo} Birthday: ${company.address} Death date: ${company.death}`;
+      p.textContent = `logo: ${company.logo} Address: ${company.address} website: ${company.website}`;
 
   
       // Build the image portrait by setting all the relevant attribute
@@ -40,12 +38,11 @@ async function getCompanyData(url) {
       portrait.setAttribute('height', '440');
   
       // Append the section(card) with the created elements
-      card.appendChild(h2);
       card.appendChild(p);
       card.appendChild(logo);
       card.appendChild(address);
 
-      card.appendChild(death);
+      card.appendChild(website);
       card.appendChild(portrait);
       cards.appendChild(card);
     }) // end of forEach loop
