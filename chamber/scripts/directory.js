@@ -18,16 +18,20 @@ async function getCompanyData(url) {
       // Create elements to add to the div.cards element
       let card = document.createElement('section');
       let portrait = document.createElement('img');
-      let phone = document.createElement('p');
-      let logo = document.createElement('p');
+      let h2 = document.createElement('h2');
+      let h3 = document.createElement('h3');
+      let p = document.createElement('p');
+      let website = document.createElement('h2');
+      let phone = document.createElement('h3');
       let address = document.createElement('p');
-      let website = document.createElement('p');
 
 
 
 
       // Build the h2 content out to show the company's full name - finish the template string
-      p.textContent = `logo: ${company.logo} Address: ${company.address} website: ${company.website} phone: ${company.phone}`;
+      h2.textContent = `${company.phone} `;
+      h3.textContent = `${company.website} `;
+      p.textContent = `${company.phone} Address: ${company.address}`;
 
   
       // Build the image portrait by setting all the relevant attribute
@@ -38,8 +42,10 @@ async function getCompanyData(url) {
       portrait.setAttribute('height', '440');
   
       // Append the section(card) with the created elements
+      card.appendChild(h2);
+      card.appendChild(h3);
+      card.appendChild(p);
       card.appendChild(phone);
-      card.appendChild(logo);
       card.appendChild(address);
 
       card.appendChild(website);
