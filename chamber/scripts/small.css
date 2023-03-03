@@ -122,6 +122,14 @@ picture.item{
 	text-align: center;
 }
 
+.jasoncontainer{
+	max-width: 960px;
+	margin: 10px auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
 h4{
 	padding-top: 20px;
 }

@@ -18,7 +18,7 @@ async function getCompanyData(url) {
       // Create elements to add to the div.cards element
       let card = document.createElement('section');
       let portrait = document.createElement('img');
-      let p = document.createElement('p');
+      let phone = document.createElement('p');
       let logo = document.createElement('p');
       let address = document.createElement('p');
       let website = document.createElement('p');
@@ -38,7 +38,7 @@ async function getCompanyData(url) {
       portrait.setAttribute('height', '440');
   
       // Append the section(card) with the created elements
-      card.appendChild(p);
+      card.appendChild(phone);
       card.appendChild(logo);
       card.appendChild(address);
 
