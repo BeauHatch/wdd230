@@ -127,7 +127,6 @@ picture.item{
 	margin: 10px auto;
 	padding: 10px;
 	display: grid;
-	grid-template-columns: 1fr;
 }
 
 h4{
@@ -179,9 +178,9 @@ align-self: auto;
 	  }
 
 
-	  * {
+	  /* * {
 		box-sizing: border-box;
-	}
+	} */
 	
 	
 	main {
@@ -213,9 +212,9 @@ align-self: auto;
 
 .menu {
 	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid black;
 	padding: 0.5rem;
-	background-color: #bbb;
+	background-color: white;
 	text-align: center;
 }
 
@@ -230,9 +229,9 @@ section {
 }
 
 section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid black;
 	padding: 0.5rem;
-	background-color: #ccc;
+	background-color: white;
 }
 
 .grid {
@@ -280,7 +279,7 @@ section {
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
+	background-color: lavender;
 }
 
 section h3 {
@@ -292,10 +291,10 @@ section a {
 	font-size: 0.9rem;
 }
 
-img {
+/* img {
 	height: 75px;
 	max-width: 100%; /* Images are jerks - Seattle*/
-}
+/* } */ */
 
 
 

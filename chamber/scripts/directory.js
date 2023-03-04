@@ -25,13 +25,10 @@ async function getCompanyData(url) {
       let phone = document.createElement('h3');
       let address = document.createElement('p');
 
-
-
-
       // Build the h2 content out to show the company's full name - finish the template string
-      h2.textContent = `${company.phone} `;
       h3.textContent = `${company.website} `;
-      p.textContent = `${company.phone} Address: ${company.address}`;
+      h2.textContent = `${company.phone} `;
+      p.textContent = `${company.address}`;
 
   
       // Build the image portrait by setting all the relevant attribute
@@ -58,21 +55,21 @@ async function getCompanyData(url) {
 
 
 // list grid shi
-  const gridbutton = document.querySelector("#dgrid");
-const listbutton = document.querySelector("#dlist");
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
 	// example using arrow function
-	display.classList.add("dgrid");
-	display.classList.remove("dlist");
+	display.classList.add("grid");
+	display.classList.remove("list");
 });
 
 listbutton.addEventListener("click", showList); // example using defined function
 
 function showList() {
-	display.classList.add("dlist");
-	display.classList.remove("dgrid");
+	display.classList.add("list");
+	display.classList.remove("grid");
 }
