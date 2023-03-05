@@ -291,10 +291,11 @@ section a {
 	font-size: 0.9rem;
 }
 
-/* img {
-	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
-/* } */ */
+img {
+	height: 100px;
+	object-fit: contain;
+	/* max-width: 100%; Images are jerks - Seattle */
+}
 
 
 

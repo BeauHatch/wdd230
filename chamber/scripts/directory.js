@@ -26,8 +26,8 @@ async function getCompanyData(url) {
       let address = document.createElement('p');
 
       // Build the h2 content out to show the company's full name - finish the template string
-      h3.textContent = `${company.website} `;
-      h2.textContent = `${company.phone} `;
+      h2.textContent = `${company.website} `;
+      h3.textContent = `${company.phone} `;
       p.textContent = `${company.address}`;
 
   
@@ -39,6 +39,7 @@ async function getCompanyData(url) {
       portrait.setAttribute('height', '440');
   
       // Append the section(card) with the created elements
+      card.appendChild(portrait);
       card.appendChild(h2);
       card.appendChild(h3);
       card.appendChild(p);
@@ -46,7 +47,6 @@ async function getCompanyData(url) {
       card.appendChild(address);
 
       card.appendChild(website);
-      card.appendChild(portrait);
       cards.appendChild(card);
     }) // end of forEach loop
   }// end of function expression
