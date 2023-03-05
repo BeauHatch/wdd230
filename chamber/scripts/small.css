@@ -294,6 +294,7 @@ section a {
 img {
 	height: 100px;
 	object-fit: contain;
+	padding: 10px;
 	/* max-width: 100%; Images are jerks - Seattle */
 }
 
