@@ -2,13 +2,11 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const viento = document.querySelector('windspeed');
 
 
 
 
-
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=aede69dbf9ad0aac1e3e64df16bd10e4';
+const url = 'https://api.openweathermap.org/data/2.5/weather?zip=84096&q=Herriman&units=imperial&appid=aede69dbf9ad0aac1e3e64df16bd10e4';
  
 async function apiFetch() {
     try {
@@ -28,7 +26,6 @@ async function apiFetch() {
 
   function  displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-    viento.innerHTML = `<strong>${weatherData.wind.temp}</strong>`;
 
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;

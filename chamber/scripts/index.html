@@ -45,8 +45,8 @@
         </picture>
       
         <picture class="item">
-            <img media= "(min-width: 800px)" class="itemimage" img ="images/hearts.jpg" data-src="images/herosmall.png">
-            <img media= "(min-width: 550px)" class="itemimage" img ="images/hearts.jpg" data-src="images/herosmall.pmg" >
+            <!-- <img media= "(min-width: 800px)" class="itemimage" img ="images/hearts.jpg" data-src="images/hearts.jpg">
+            <img media= "(min-width: 550px)" class="itemimage" img ="images/hearts.jpg" data-src="images/hearts.jpg" > -->
             <img class="itemimage" src="images/hearts.jpg" alt="hearts">
             <div class="overlaytext">
                 <h3>valentines day event </h3> 
@@ -54,13 +54,15 @@
         </picture>
        
     
-        <picture class="item" >
-            <source media= "(min-width: 800px)" class="itemimage" img ="images/weatherlarge.png">
+        <picture class="itemweather" >
+            <!-- <source media= "(min-width: 800px)" class="itemimage" img ="images/weatherlarge.png">
             <source media= "(min-width: 550px)" class="itemimage" img ="images/weathermedium.png">
-            <img class="itemimage" src="images//weather.jpg" alt="weather">       
-            <div class="overlaytext">Today's Weather</div>
-            <div class="overlaytext2">High: 57&deg; </div>
-            <div class="overlaytext3">Low: 37&deg; </div>
+            <img class="itemimage" src="images//weather.jpg" alt="weather">        -->
+            <div class="overlaytext"> The current weather is <span id="current-temp"></span>&deg;</div>
+            <div class="overlaytext2">  <figure>
+                <img src="" alt="" id="weather-icon" />
+                <figcaption></figcaption>
+              </figure></div>
             <div class="overlaytext4">Wind Chill: <span id="windChill"></span>&deg; </div>
         </picture>
 
@@ -124,6 +126,8 @@
     <script src ="windchill.js"></script>
     <script src ="intersectionObserver.js"></script>
     <script src ="navbar.js"></script>
+    <script src = "weatherstuff.js"></script>
+
 
 
 
