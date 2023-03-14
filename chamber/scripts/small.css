@@ -63,10 +63,12 @@ picture.item{
 }
 
 
-
-.montue{
+.removebanner{
 	text-align: center;
-}
+	max-width: 960px;
+	color: pink;
+margin: auto;}
+
 
 .item{
 	background: lavender;
@@ -306,7 +308,7 @@ section a {
 	object-fit: contain;
 	padding: 10px;
 	/* max-width: 100%; Images are jerks - Seattle */
-} */
+/* } */ */
 
 
 
@@ -493,6 +495,14 @@ grid-column: 1/3;
 			margin: 0;
 			padding: 0.25rem;
 		}
+		.menu {
+			display: none;
+			margin: 1rem auto;
+			border: 1px solid black;
+			padding: 0.5rem;
+			background-color: white;
+			text-align: center;
+		}
 }
 
 @media only screen and (min-width: 800px) {/* desktop view */
@@ -544,6 +554,14 @@ grid-column: 1/3;
 		margin: 200px auto;
 		padding: 20px;
 		border-radius: 20px;
+	}
+	.menu {
+		display: none;
+		margin: 1rem auto;
+		border: 1px solid black;
+		padding: 0.5rem;
+		background-color: white;
+		text-align: center;
 	}
 
 }

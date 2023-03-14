@@ -2,7 +2,9 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const viento = document.querySelector('windspeed');
+const viento = document.querySelector('windSpeed');
+const windChill = document.querySelector('windChill');
+
 
 
 
@@ -28,7 +30,6 @@ async function apiFetch() {
 
   function  displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-    viento.innerHTML = `<strong>${weatherData.wind.temp}</strong>`;
 
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
@@ -37,3 +38,15 @@ async function apiFetch() {
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
   }
+
+  function calculateWindChill(temperature, windSpeed){
+    if (temperature <= 50 && windSpeed > 3.0) {
+    let windChill = 35.74 +
+    0.6215 * temperature -
+    35.75 * Math.pow(windSpeed, 0.16) +
+    0.4275 * temperature * Math.pow(windSpeed, 0.16);
+    return windChill.toFixed(2);
+    } else {
+    return "N/A";
+    }
+  }    
