@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <link rel="stylesheet" href="small.css"></head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <body>
     <header>
         <div class="flex-container">
@@ -17,24 +20,26 @@
     <nav>
         <ul class="navigation">
             <li><a id="menu" href="#"></a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Sign up</a></li>
             <li><a href="#">Feedback</a></li>
             <li><a href="#">History</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
+    <br>
+<h1>Join us</h1>
+<br>
     <form action="thankyou.html"> 
         <table>
-            <thead>
+            <!-- <thead>
                 <tr>
-                    <th colspan="2" scope="colgroup">Join us</th>
+                    <th colspan="2" scope="colgroup"></th>
                 </tr>
     
-            </thead>
+            </thead> -->
             <tbody>
                 <tr>
                     <th><label for="Email">Email:</label></th>
@@ -69,7 +74,7 @@
                 
                 <tr>
                     <th><label for="position">Business position</label></th>
-                    <td><input type="text" id="position" name="position" pattern="/^.{6,}$//^[a-zA-Z]{7,30}$/"></td>
+                    <td><input type="text" id="position" name="position" pattern="([A-z0-9À-ž\s]){7,}"></td>
                 </tr>
 
                 <tr>
@@ -117,8 +122,8 @@
                 </div>
                     
         </footer> 
-        <script src ="navbar.js"></script>
-<script src="hiddenDateAndTime.js"></script></body>
+        <script src ="scripts/navbar.js"></script>
+<script src="scripts/hiddenDateAndTime.js"></script></body>
 </html>
 
 

@@ -66,7 +66,6 @@ picture.item{
 .removebanner{
 	text-align: center;
 	max-width: 960px;
-	color: pink;
 margin: auto;}
 
 
@@ -74,7 +73,7 @@ margin: auto;}
 	background: lavender;
 	color: black;
 	font-size: 20px;
-	padding: 20px;
+	padding: 10px;
 	/* border: tan 2px solid; */
 	width: 100%;
 	text-align: center;
@@ -123,6 +122,7 @@ margin: auto;}
 .footercontainer{
 	display: grid;
 	grid-template-columns: 1fr;
+	padding: 30px;
 }
 
 .date {
@@ -223,6 +223,7 @@ align-self: auto;
 
 
 .menu {
+	display: block;
 	margin: 1rem auto;
 	border: 1px solid black;
 	padding: 0.5rem;
@@ -303,21 +304,32 @@ section a {
 	font-size: 0.9rem;
 }
 
-/* img {
-	height: 100px;
+.cards img{
+	height: 90px;
 	object-fit: contain;
 	padding: 10px;
-	/* max-width: 100%; Images are jerks - Seattle */
-/* } */ */
+	max-width: 100%;  
+	/* Images are jerks - Seattle  */
+}
 
+.contacttext{
+text-align: center;
+}
 
+.containercontact{
+	max-width: 960px;
+	margin: 10px auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr;
+}
 
 
 /* table styling */
 
 :root {
 
-	--back2: tan;
+	--back2: lavender;
 	  --border: hsl(0,0%,20%);
 	  --borderlight: hsl(0,0%,33%);
 	  --shadow: hsl(0,0%,50%);
@@ -417,7 +429,10 @@ nav {
 	grid-column: 1/3;
 }
 
-  
+.h3dis{
+	padding: 40px;
+}
+
 
 /* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
 @media only screen and (min-width: 550px) {
@@ -495,13 +510,19 @@ grid-column: 1/3;
 			margin: 0;
 			padding: 0.25rem;
 		}
-		.menu {
-			display: none;
+		/* .menu {
 			margin: 1rem auto;
 			border: 1px solid black;
 			padding: 0.5rem;
 			background-color: white;
 			text-align: center;
+		} */
+		.containercontact{
+			max-width: 960px;
+			margin: 10px auto;
+			padding: 10px;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
 		}
 }
 
@@ -555,13 +576,13 @@ grid-column: 1/3;
 		padding: 20px;
 		border-radius: 20px;
 	}
-	.menu {
+	/* .menu {
 		display: none;
 		margin: 1rem auto;
 		border: 1px solid black;
 		padding: 0.5rem;
 		background-color: white;
 		text-align: center;
-	}
+	} */
 
 }
