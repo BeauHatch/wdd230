@@ -1,4 +1,4 @@
-const url = 'https://beauhatch.github.io/wdd230/chamber/scripts/directory.json';
+const url = 'https://beauhatch.github.io/wdd230/chamber/html/scripts/directory.json';
 
 async function getCompanyData(url) {
     const response = await fetch(url);
