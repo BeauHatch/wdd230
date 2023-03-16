@@ -12,22 +12,22 @@ async function getCompanyData(url) {
 
   const displayCompany = (companies) => {
 
-    const cards = document.querySelector('div.cards'); // select the output container element
+    const cards = display; //document.querySelector('.busi'); // select the output container element
   
     companies.forEach((company) => {
       // Create elements to add to the div.cards element
       let card = document.createElement('section');
       let portrait = document.createElement('img');
-      let h2 = document.createElement('h2');
-      let h3 = document.createElement('h3');
+      let h4 = document.createElement('h4');
+      let h6 = document.createElement('h6');
       let p = document.createElement('p');
-      let website = document.createElement('h2');
-      let phone = document.createElement('h3');
+      let website = document.createElement('h4');
+      let phone = document.createElement('h6');
       let address = document.createElement('p');
 
-      // Build the h2 content out to show the company's full name - finish the template string
-      h2.textContent = `${company.website} `;
-      h3.textContent = `${company.phone} `;
+      // Build the h4 content out to show the company's full name - finish the template string
+      h4.textContent = `${company.website} `;
+      h6.textContent = `${company.phone} `;
       p.textContent = `${company.address}`;
 
   
@@ -40,13 +40,13 @@ async function getCompanyData(url) {
   
       // Append the section(card) with the created elements
       card.appendChild(portrait);
-      card.appendChild(h2);
-      card.appendChild(h3);
+      card.appendChild(h4);
+      card.appendChild(h6);
       card.appendChild(p);
       card.appendChild(phone);
       card.appendChild(address);
-
       card.appendChild(website);
+
       cards.appendChild(card);
     }) // end of forEach loop
   }// end of function expression
