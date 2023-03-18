@@ -362,7 +362,7 @@ width: 300px;
 	  border: thin solid var(--border);
 	  box-shadow: 0 0 7px var(--shadow);
 	  border-collapse: collapse;
-	  max-width: 50px;
+	  max-width: 100%;
   }
   
   caption {
