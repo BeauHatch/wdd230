@@ -1,0 +1,64 @@
+@media only screen and (min-width: 500px) {
+
+.logo {
+    height: 150px;
+    width: 198px;
+    vertical-align: top;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+    max-width: 960px;
+    margin: auto;
+}
+
+.herocontainer{
+	display: grid;
+	grid-template-columns: 2fr 1fr 0fr;
+}
+
+.colorblock{
+    height: 100%;
+}
+
+
+
+.weatherbox{
+    aspect-ratio: 3/2;
+    }
+
+    .footergrid{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    table {
+        margin: 10px auto;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+      
+      .titles {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      
+      .inputs {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .outputdiv{
+        font-size: medium;
+          }
+}

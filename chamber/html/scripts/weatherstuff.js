@@ -3,11 +3,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-
-
-
 const url = 'https://api.openweathermap.org/data/2.5/weather?zip=84096&q=Herriman&units=imperial&appid=aede69dbf9ad0aac1e3e64df16bd10e4';
- 
 async function apiFetch() {
     try {
       const response = await fetch(url);

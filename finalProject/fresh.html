@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build you own drink mix</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<header>
+  <div class="flex-container">
+  <nav>
+      <ul class="navigation">
+          <li><a id="menu" href="#"></a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="fresh.html">Build your own drink</a></li>
+          <li><a href="aboutUs.html">About us</a></li>
+      </ul>
+  </nav>
+  <img class="logo" src="images/anothercraplogo.png" alt="logo">
+  <a href="fresh.html" target="_blank">
+    <img src="images/cart.png" alt="cart" class="cart">
+  </a>  
+</div>
+</header>
+<body>
+
+        <h2>Build your own fruit drink</h2>
+        
+        <div class="container">
+            <div class="row">
+              <div class="titles">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="inputs">
+                <input type="text" id="fname" name="fname" placeholder="First name" oninput="updatediv()">
+              </div>
+            </div>
+            <div class="row">
+              <div class="titles">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="inputs">
+                <input type="text" id="lname" name="lname" placeholder="Last name" oninput="updatediv()">
+              </div>
+            </div>
+            <div class="row">
+              <div class="titles">
+                <label for="1fruit">First fruit</label>
+              </div>
+              <div class="inputs">
+                <select id="fruitname1" name="fruitname" class="frooty" onchange="updatediv()">
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="titles">
+                <label for="2fruit">Second fruit</label>
+              </div>
+              <div class="inputs">
+                <select id="fruitname2" name="fruitname2" class="frooty" onchange="updatediv()">
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="titles">
+                <label for="3fruit">Third fruit</label>
+              </div>
+              <div class="inputs">
+                <select id="fruitname3" name="fruitname3" class="frooty" onchange="updatediv()">
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="titles">
+                <label for="instructions">Special instructions</label>
+              </div>
+              <div class="inputs">
+                <textarea id="instructions" name="instructions" placeholder="Write something.." oninput="updatediv()" style="height:200px"></textarea>
+              </div>
+            </div>
+
+        </div>
+
+        <div id="outputdiv" class="outputdiv"></div>
+
+        <footer>
+          
+          <div class="footergrid">
+            <p>Bountiful foods &copy; - Beau Hatch</p>
+            <p><a href="home.html">Home</a></p>
+            <p><a href="aboutUs.html">About</a></p>
+
+            <div class="social">
+              <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram_copy copy.png" alt="instagram icon">
+              </a>
+        
+              <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook_copy copy.png" alt="facebook icon">
+              </a>
+        
+              <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter_copy copy.png" alt="twitter icon">
+              </a>
+            </div>
+        
+        
+              <p>1635 Faraday Ave, Carlsbad, CA 92008</p>
+        
+            </div>
+            <br>
+            <div>
+            <p>Site last modified:</p>
+            <p id="lastmodified"></p>
+          </div>
+          </footer>
+<script src="scripts/fruitjson.js"></script>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/lastmodified.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 800px) {
+	.navigation {
+		display: flex;
+        margin-left: 0%;
+        max-width: 800%;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+        font-size: 26px;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+
+
+
+    .flex-container :nth-child(1){
+        order: 1;
+    }
+    .flex-container :nth-child(3){
+        order: 3;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+  
+
+    .herocontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 0fr;
+    }
+
+    button{
+        margin-top: 50%;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    .weatherbox{
+        aspect-ratio: 1/1;
+        }
+
+        .footergrid{
+            display: grid;
+            grid-template-columns: 4fr 1fr 1fr;
+        }
+
+    .logo{
+        margin-right: 0cap;
+    }
+
+    table {
+        margin: 10px auto;
+        margin-top: 30px;
+        align-self:center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .outputdiv{
+        font-size: large;
+          }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class="flex-container">
+    <nav>
+        <ul class="navigation">
+            <li><a id="menu" href="#"></a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="fresh.html">Build your own drink</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+        </ul>
+    </nav>
+    <img class="logo" src="images/anothercraplogo.png" alt="logo">
+    <a href="fresh.html" target="_blank">
+      <img src="images/cart.png" alt="cart" class="cart">
+    </a>  
+  </div>
+</header>
+<div class="herocontainer">
+<img class="froot" src="images/froot.jpeg" alt="fruit">
+<div class="colorblock">
+<h3 class="overlaytext">Build your own drink</h3>
+
+<button type="button" onclick="location.href='fresh.html'"></button>
+</div>
+
+</div>
+
+<div class="herocontainer">
+
+<div class="weatherbox">  
+    <div class="weatherinfo">
+    <img src="" alt="" id="weather-icon" />
+    <figure>
+        <figcaption></figcaption>
+    </figure>
+    <p>Current tempature: <span id="current-temp"></span>&deg;</p>
+    <p>Humidity: <span id="humid"></span></p>
+    </div>
+
+    <div class="weatherinfo">
+    <img src="" alt="" id="weather-icon2" />
+    <figure>
+        <figcaption id="figcaption2"></figcaption>
+    </figure>
+    <p>Current tempature: <span id="current-temp2"></span>&deg;</p>
+    <p>Humidity: <span id="humid2"></span></p>
+    </div>
+
+    <div class="weatherinfo">
+    <img src="" alt="" id="weather-icon3" />
+    <figure>
+        <figcaption id="figcaption3"></figcaption>
+    </figure>
+    <p>Current tempature: <span id="current-temp3"></span>&deg;</p>
+    <p>Humidity: <span id="humid3"></span></p>
+    </div>
+</div>
+
+
+
+  <div id="map"></div>
+</div>
+
+<footer>
+          
+  <div class="footergrid">
+    <p>Bountiful foods &copy; - Beau Hatch</p>
+    <p><a href="home.html">Home</a></p>
+    <p><a href="aboutUs.html">About</a></p>
+
+    <div class="social">
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram_copy copy.png" alt="instagram icon">
+      </a>
+
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook_copy copy.png" alt="facebook icon">
+      </a>
+
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twitter_copy copy.png" alt="twitter icon">
+      </a>
+    </div>
+
+
+      <p>1635 Faraday Ave, Carlsbad, CA 92008</p>
+
+    </div>
+    <br>
+    <div>
+    <p>Site last modified:</p>
+    <p id="lastmodified"></p>
+  </div>
+  </footer>
+<script src="scripts/fruitjson.js"></script>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/lastmodified.js"></script>
+
+</body>
+</html>
+<!-- fruit image source -->
+<!-- https://www.google.com/search?q=fruit&sxsrf=AJOqlzWky_SJJ2RPJe8jCnqoaDpNa2iI0Q:1679411790066&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjUoba5qO39AhUnOUQIHeQTAbMQ_AUoAXoECAIQAw&biw=1440&bih=821&dpr=2#imgrc=svRl6D0edNuf2M -->
